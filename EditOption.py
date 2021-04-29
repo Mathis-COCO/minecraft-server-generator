@@ -130,3 +130,16 @@ with open("./server.properties","r") as options :
     new_options = "#Minecraft server properties\n#date\n"+("".join(map(str, server_options)))
     with open("./server.properties","a") as opt: 
         opt.write(new_options)
+    print("parameter changed")
+    keep_modifying = " "
+    while True :
+        try:
+            keep_modifying = str(input("Changer d'autres options ? : "))
+        except ValueError :
+            print('valeur invalide')
+        else :
+            if "i" in keep_modifying or "u" in keep_modifying :
+                execut = 'python3 ./EditOption.py'
+                os.system(execut)
+            else :
+                print("LUCAS AJOUTE LE PATH DE TON MENU ICI STP CE SERAIT SYMPA DE TA PART MERCI BEAUCOUP D'AVANCE LE GOLANG MASTER")
