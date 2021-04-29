@@ -1,8 +1,9 @@
+#!/bin/bash
 # script qui lance le serveur minecraft dont le dossier est mis en argument
 if [ -d $1 ]
 then
 	cd $1
-	./../startServerFirstTime.sh
+	./../src/startServer.sh $1
 	cd ..
 	exit 0
 else

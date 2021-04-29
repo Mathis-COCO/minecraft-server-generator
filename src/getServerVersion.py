@@ -37,7 +37,7 @@ if len(sys.argv) == 2:
     if verCherchee in versions:
         verLien = versions[verCherchee]
         verDownload = "wget " + verLien
-        with open("./version.sh","w") as file:
+        with open("./src/version.sh","w") as file:
             file.write(verDownload)
             print("la version : {} a bien ete trouvee".format(verCherchee))
     else:

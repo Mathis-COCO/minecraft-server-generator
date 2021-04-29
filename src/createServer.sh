@@ -1,3 +1,4 @@
+#!/bin/bash
 # script creant un serveur minecraft de la version donnée en premier argument dans le repertoire donné en deuxième argument
 if [ $# -eq 2 ]
 then
@@ -16,12 +17,12 @@ then
 	else
 		mkdir $2
 	fi
-	python3 ./getServerVersion.py $1
+	python3 ./src/getServerVersion.py $1
 	cd $2
-	./../version.sh
-	./../startServerFirstTime.sh
+	./../src/version.sh
+	./../src/startServerFirstTime.sh
 	cd ..
-	python3 ./acceptCLUF.py $2
+	python3 ./src/acceptCLUF.py $2
 	exit 0
 else
 	echo "Il n'y a pas le bon nombre de parametres"
