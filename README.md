@@ -19,7 +19,8 @@ Réalisation d'un gestionnaire d'un serveur du jeu Minecraft .
 * Par ailleurs, il nous faut le package curl pour pouvoir exécuter le script précédent : ``` apt install curl ``` .
 
 * Il est recommandé de regarder sur sa machine si python3 est installé. Si ce n’est pas le cas, installez-le : ``` apt install python3 ``` .
-Et pour finir, pour pouvoir exécuter le serveur minecraft sur un autre terminal, il faudra installer le package screen : ``` apt install screen ```
+
+* Pour finir, pour pouvoir exécuter le serveur minecraft sur un autre terminal, il faudra installer le package screen : ``` apt install screen ```
 
 ---
 ## Création du programme
