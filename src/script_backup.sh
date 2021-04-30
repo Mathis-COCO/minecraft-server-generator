@@ -14,7 +14,7 @@ then
 		mkdir $1$DATE
 		cd ..
 		cp -r $1/world/ saves/$1$DATE
-		sleep 30
+		sleep 600
 	done
 else
 	echo "Problème de paramètres : ./script_backup.sh <nom du serveur>"

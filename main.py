@@ -73,11 +73,6 @@ def ModifyOptions():
     time.sleep(3)
     ShowMenu()
 
-def Monitoring():
-    Clear()
-    print("Monitoring")
-    ShowMenu()
-
 def Save():
     Clear()
     print("========AutoSave========")
@@ -100,6 +95,8 @@ def FolderList() :
         folderList.remove("src")
     if "__pycache__" in folderList:
         folderList.remove("__pycache__")
+    if "saves" in folderList:
+        folderList.remove("saves")
     for folder in folderList:
         print("[" + folder + "]" ,end=" ")
         print("")
@@ -130,10 +127,9 @@ def ShowMenu():
         "1": CreateServer,
         "2": LaunchServer,
         "3": ModifyOptions,
-        "4": Monitoring,
-        "5": Save,
-        "6": DeleteServer,
-        "7": Help,
+        "4": Save,
+        "5": DeleteServer,
+        "6": Help,
         "stop": Stop
     }
     Clear()
@@ -141,10 +137,9 @@ def ShowMenu():
     print("1.Creer un serveur")
     print("2.Lancer un serveur")
     print("3.Modifier les options d'un serveur")
-    print("??4.Monitoring d'un serveur??")
-    print("5.Sauvegardes")
-    print("6.Supprimer un serveur")
-    print("7.Help")
+    print("4.Sauvegarde automatique")
+    print("5.Supprimer un serveur")
+    print("6.Help")
     print("========================")
     response = input("Veuillez tapez votre choix: ")
     func = funcChoice.get(response, ErrorMessage)
