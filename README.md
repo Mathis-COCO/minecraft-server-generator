@@ -34,6 +34,7 @@ Réalisation d'un gestionnaire d'un serveur du jeu Minecraft .
     *  Lancer le serveur
     *  Modifier les options d'un serveur 
     *  Sauvegarde 
+    * Supprimer un serveur 
     *  Aide
 
 ### **Création et lancement d'un serveur** 
